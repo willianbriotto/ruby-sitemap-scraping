@@ -74,7 +74,7 @@ def createSitemap(host, path, recursive, quiet)
 	deep = deep.uniq
 	if deep.length > 0 and recursive
 		deep.each do |__in|
-			createSitemap(host, __in, recursive)
+			createSitemap(host, __in, recursive, quiet)
 		end
 	end
 end
